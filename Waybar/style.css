@@ -1,0 +1,127 @@
+* {
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: #131315;
+  color: #e6d8ba;
+  border-radius: 10px;
+}
+
+#custom-omarchy {
+  font-size: 15px;
+  margin: 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: #27272a;
+}
+
+#workspaces {
+  margin: 4px 0px;
+  padding: 0 4px;
+  background-color: #27272a;
+}
+
+#workspaces button {
+  padding: 0 4px;
+  background-color: transparent;
+  color: #e6d8ba;
+  border-radius: 5px;
+  transition: 0.15s ease-in-out;
+}
+
+#workspaces button:hover {
+  background: #3f3f46;
+  color: #000;
+}
+
+#workspaces button.active {
+  background-color: #ff9b71;
+  color: #000;
+}
+
+#workspaces button.empty {
+  color: rgba(230, 216, 186, 0.4);
+  opacity: 0.45;
+}
+
+#hyprland-window,
+#clock,
+#battery,
+#cpu,
+#mpris,
+#network,
+#pulseaudio,
+#idle_inhibitor,
+#power-profiles-daemon,
+#tray,
+#bluetooth,
+#backlight,
+#custom-voxtype,
+#custom-update,
+#custom-updatespacman {
+  padding: 0 8px;
+  color: #e6d8ba;
+  background-color: #27272a;
+  margin: 5px 5px 5px 0;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: #e6d8ba;
+    color: #000000;
+  }
+}
+
+#network.disconnected, #bluetooth.disabled, #pulseaudio.muted {
+  background-color: #ff9b71;
+  color: #000;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
+tooltip {
+  padding: 4px;
+  background: #27272a;
+  border: 1px solid rgba(230, 216, 186, 0.8);
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: #e6d8ba;
+}
+
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+#idle_inhibitor.activated {
+  color: #178b76;
+}
+
+#custom-cava {
+  min-width: 80px;
+  color: #ff9b71;
+  background-color: #27272a;
+  margin: 5px;
+  padding: 0 10px;
+}

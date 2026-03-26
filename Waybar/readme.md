@@ -1,0 +1,1 @@
+## Se agrego esta configuracion para tener el waybar configurado se agrego tambien el "cava" para la musica como tal asi que en todo caso seria solo cuestion de instalarlo y ya estaria todo el proceso 
